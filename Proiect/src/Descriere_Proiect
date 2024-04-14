@@ -1,0 +1,21 @@
+Spital:
+    - nume_spital
+    - nr_angajati
+    - cabinete
+    - laboratoare (realizare analize)
+
+    - Sectii (specializari)
+
+    - Angajati: Medici, Asistente, Personal Garda, Receptionist, Paza.
+        -> se impart pe specializari: Cardiologie, Neurologie, Gastrologie, Oncologie, Pediatrie, Pneumologie, Psihiatrie, Medicina de Familie
+
+    - Pacienti:
+                - fisa medicala: sumar(id_pacient, nume, prenume, serie_card_sanatate), istoric
+                - reteta: sumar, diagnostic, prescriptie, durata_tratamentului
+                - adeverinta: sumar - id_pacient, scop, semnatura (bool)
+
+    - Programari:
+                - sumar, data, specializare,
+
+    - Analize:
+                - sumar, tip (analize_sange, testare, consultatie)
