@@ -1,28 +1,23 @@
 package Persoana;
 
+import Fisa_Medicala.Diagnostic;
 import Fisa_Medicala.FisaMedicala;
 import Specializare.Specializare;
 
-public class Pacient extends Persoana{
 
+public class Pacient extends Persoana {
 
-
-    private int id = 0;
-    public Persoana persoana;
-
-
-    public Pacient(String nume, String prenume, String data, String adresa, String telefon){
-        super(nume, prenume, data, adresa, telefon);
-        id++;
-    }
-
-    public int getHowMany(){
-       return id;
+    public Pacient() {}
+    public Pacient(String nume, String prenume, String dataNasterii, String adresa, String telefon) {
+        super(nume, prenume, dataNasterii, adresa, telefon);
     }
 
     @Override
-    public void afiseaza(){
-        System.out.print("Pacientul " + this.getHowMany() + ": " );
+    public void afiseaza() {
+        System.out.println("Detalii Personale Pacient:");
         super.afiseaza();
+
     }
 }
+
+

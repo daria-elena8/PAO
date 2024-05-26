@@ -1,46 +1,45 @@
 package Persoana;
 
-public class Persoana {
 
-    protected String Nume;
-    protected String Prenume;
-    protected String data_nasterii;
+public abstract class Persoana {
+    protected String nume;
+    protected String prenume;
+    protected String dataNasterii;
     protected String telefon;
     protected String adresa;
 
-    Persoana(){}
-
-    Persoana(String nume, String prenume, String data_nasterii, String adresa, String telefon){
-        this.Nume = nume;
-        this.Prenume = prenume;
-        this.data_nasterii = data_nasterii;
+    public Persoana() {}
+    public Persoana(String nume, String prenume, String dataNasterii, String adresa, String telefon) {
+        this.nume = nume;
+        this.prenume = prenume;
+        this.dataNasterii = dataNasterii;
         this.telefon = telefon;
         this.adresa = adresa;
     }
 
-    public String getNume(){
-        return this.Nume;
+    public String getNume() {
+        return nume;
     }
-    public void setNume(String nume){
-        this.Nume = nume;
+
+    public void setNume(String nume) {
+        this.nume = nume;
     }
 
     public String getPrenume() {
-        return Prenume;
+        return prenume;
     }
 
     public void setPrenume(String prenume) {
-        Prenume = prenume;
+        this.prenume = prenume;
     }
 
-    public String getData_nasterii() {
-        return data_nasterii;
+    public String getDataNasterii() {
+        return dataNasterii;
     }
 
-    public void setData_nasterii(String data_nasterii) {
-        this.data_nasterii = data_nasterii;
+    public void setDataNasterii(String dataNasterii) {
+        this.dataNasterii = dataNasterii;
     }
-
 
     public String getTelefon() {
         return telefon;
@@ -62,5 +61,4 @@ public class Persoana {
         System.out.print( getNume() + " " + getPrenume() + " \tTelefon: " + getTelefon()
                 + " \tAdresa: " + getAdresa() + ".");
     }
-
 }

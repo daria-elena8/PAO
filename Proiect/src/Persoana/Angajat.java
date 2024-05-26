@@ -1,40 +1,43 @@
 package Persoana;
 import Specializare.Specializare;
 
-public class Angajat extends Persoana{
-
-    private static int idAng = 0;
-    private Specializare specializare;
-    private int salariu;
+public class Angajat extends Persoana {
+    protected int idAngajat;
+    protected String dataAngajarii;
+    protected double salariu;
     private int ore_saptamana;
 
-    Angajat(String nume, String prenume, String data, String adresa, String telefon, Specializare specializare, int salariu, int ore){
-        super(nume, prenume, data, adresa, telefon);
-        this.specializare = specializare;
+    public Angajat() {}
+    public Angajat(String nume, String prenume, String dataNasterii, String adresa, String telefon, int idAngajat, String dataAngajarii, double salariu) {
+        super(nume, prenume, dataNasterii, adresa, telefon);
+        this.idAngajat = idAngajat;
+        this.dataAngajarii = dataAngajarii;
         this.salariu = salariu;
-        this.ore_saptamana = ore;
-        idAng++;
+    }
+    public int getIdAngajat() {
+        return idAngajat;
     }
 
-    public int getHowMany(){
-        return idAng;
+    public void setIdAngajat(int idAngajat) {
+        this.idAngajat = idAngajat;
     }
 
-    public Specializare getSpecializare() {
-        return specializare;
+    public String getDataAngajarii() {
+        return dataAngajarii;
     }
 
-    public void setSpecializare(Specializare specializare) {
-        this.specializare = specializare;
+    public void setDataAngajarii(String dataAngajarii) {
+        this.dataAngajarii = dataAngajarii;
     }
 
-    public int getSalariu() {
+    public double getSalariu() {
         return salariu;
     }
 
     public void setSalariu(int salariu) {
         this.salariu = salariu;
     }
+
 
     public int getOre_saptamana() {
         return ore_saptamana;
@@ -45,12 +48,17 @@ public class Angajat extends Persoana{
     }
 
 
+
     @Override
     public void afiseaza(){
-        System.out.println("Angajatul " + this.getHowMany() + ": " + this.getNume() + " " + this.getPrenume()
-                + "\tSpecializare: " + this.getSpecializare() + "\tSalariu: " + this.getSalariu()
+        System.out.println("Detalii Personale Angajat: ");
+        super.afiseaza();
+        System.out.println("Detalii Profesionale Angajat: " + "\tSalariu: " + this.getSalariu()
                 + "\tLucreaza: " + getOre_saptamana() + " ore/saptamana" );
     }
 
-
 }
+
+
+
+
