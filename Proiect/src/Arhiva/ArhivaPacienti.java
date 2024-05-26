@@ -1,5 +1,7 @@
 package Arhiva;
-import Persoana.Pacient;
+
+/*
+import Persoana.Pacient.Fisa_Medicala.Pacient;
 
 import java.util.List;
 
@@ -18,3 +20,4 @@ public class ArhivaPacienti {
 
 
 }
+*/

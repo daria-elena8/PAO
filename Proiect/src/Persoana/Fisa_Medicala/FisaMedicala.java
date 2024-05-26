@@ -1,10 +1,9 @@
-package Fisa_Medicala;
+package Persoana.Fisa_Medicala;
 
 import Persoana.Pacient;
-
 import java.util.List;
 
-public class FisaMedicala {
+public class FisaMedicala extends Pacient {
 
     private static int id = 0;
 
@@ -21,12 +20,18 @@ public class FisaMedicala {
     }
 
     public FisaMedicala(FisaMedicala fisaMedicala){
+        this.nrFisa = fisaMedicala.nrFisa;
         this.pacient = fisaMedicala.getPacient();
         this.diagnostice = fisaMedicala.diagnostice;
     }
 
     public int getNrFisa(){
         return nrFisa;
+    }
+
+    @Override
+    public int getId(){
+        return this.nrFisa;
     }
     public Pacient getPacient() {
         return pacient;

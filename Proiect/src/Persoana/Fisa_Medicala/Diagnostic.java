@@ -1,4 +1,4 @@
-package Fisa_Medicala;
+package Persoana.Fisa_Medicala;
 
 public enum Diagnostic {
     Infarct_miocardic,

@@ -1,7 +1,13 @@
 package Persoana;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
 
-public abstract class Persoana {
+import servicii.Identificator;
+
+public abstract class Persoana implements Identificator {
     protected String nume;
     protected String prenume;
     protected String dataNasterii;
