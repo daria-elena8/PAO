@@ -1,0 +1,154 @@
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Popescu Ion	Telefon: 0712345678	Adresa: StradaFlorilor1.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Ionescu Maria	Telefon: 0723456789	Adresa: StradaLalelelor2.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Georgescu Ana	Telefon: 0734567890	Adresa: StradaTrandafirilor3.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Vasilescu Andrei	Telefon: 0745678901	Adresa: StradaCiresilor4.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Dumitrescu Elena	Telefon: 0756789012	Adresa: StradaTeilor5.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Marinescu Mihai	Telefon: 0767890123	Adresa: StradaMagnoliei6.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Iliescu Raluca	Telefon: 0778901234	Adresa: StradaPanselutelor7.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Popa Alexandru	Telefon: 0789012345	Adresa: StradaZambilelor8.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Stanescu Claudia	Telefon: 0790123456	Adresa: StradaCrinilor9.
+
+----------------------------------------------------------------------------------------------
+
+Detalii Personale Pacient: 
+Enache Bogdan	Telefon: 0710234567	Adresa: StradaLiliacului10.
+
+----------------------------------------------------------------------------------------------
+Post:	 Asistent Medical
+Medic Asociat: Ionescu_Maria
+
+Detalii Personale Angajat: 
+Popescu Ion	Telefon: 0712345678	Adresa: StradaFlorilor1.
+
+Detalii Profesionale Angajat: 
+Salariu: 3000.0	Lucreaza: 40 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Medic
+Specializare: Cardiologie
+
+Detalii Personale Angajat: 
+Ionescu Maria	Telefon: 0723456789	Adresa: StradaLalelelor2.
+
+Detalii Profesionale Angajat: 
+Salariu: 3500.0	Lucreaza: 35 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Personal Securitate
+Certificat securitate : Da
+
+Detalii Personale Angajat: 
+Georgescu Ana	Telefon: 0734567890	Adresa: StradaTrandafirilor3.
+
+Detalii Profesionale Angajat: 
+Salariu: 3200.0	Lucreaza: 38 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Receptionist
+Limbi Străine: Da
+
+Detalii Personale Angajat: 
+Vasilescu Andrei	Telefon: 0745678901	Adresa: StradaCiresilor4.
+
+Detalii Profesionale Angajat: 
+Salariu: 2800.0	Lucreaza: 42 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Receptionist
+Limbi Străine: Nu
+
+Detalii Personale Angajat: 
+Dumitrescu Elena	Telefon: 0756789012	Adresa: StradaTeilor5.
+
+Detalii Profesionale Angajat: 
+Salariu: 3100.0	Lucreaza: 37 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Medic
+Specializare: Medicina_Familie
+
+Detalii Personale Angajat: 
+Marinescu Mihai	Telefon: 0767890123	Adresa: StradaMagnoliei6.
+
+Detalii Profesionale Angajat: 
+Salariu: 3400.0	Lucreaza: 36 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Asistent Medical
+Medic Asociat: Stanescu_Claudia
+
+Detalii Personale Angajat: 
+Iliescu Raluca	Telefon: 0778901234	Adresa: StradaPanselutelor7.
+
+Detalii Profesionale Angajat: 
+Salariu: 2900.0	Lucreaza: 39 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Asistent Medical
+Medic Asociat: Dumitrescu_Elena
+
+Detalii Personale Angajat: 
+Popa Alexandru	Telefon: 0789012345	Adresa: StradaZambilelor8.
+
+Detalii Profesionale Angajat: 
+Salariu: 3300.0	Lucreaza: 34 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Medic
+Specializare: Medicina_Dentara
+
+Detalii Personale Angajat: 
+Stanescu Claudia	Telefon: 0790123456	Adresa: StradaCrinilor9.
+
+Detalii Profesionale Angajat: 
+Salariu: 2800.0	Lucreaza: 40 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+Post:	 Asistent Medical
+Medic Asociat: Ionescu_Maria
+
+Detalii Personale Angajat: 
+Enache Bogdan	Telefon: 0710234567	Adresa: StradaLiliacului10.
+
+Detalii Profesionale Angajat: 
+Salariu: 3100.0	Lucreaza: 38 ore/saptamana.
+
+----------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------

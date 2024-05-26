@@ -1,15 +1,15 @@
 package domain;
-
-import Arhiva.ArhivaAngajati;
-import Arhiva.ArhivaPacienti;
+//
+//import Arhiva.ArhivaAngajati;
+//import Arhiva.ArhivaPacienti;
 public class Spital {
 
     private static String nume_spital;
     private static int numar_angajati = 0;
     private static int numar_cabinete;
     private static int numar_laboratoare;
-    private ArhivaAngajati angajati;
-    private ArhivaPacienti pacienti;
+    //private ArhivaAngajati angajati;
+    //private ArhivaPacienti pacienti;
 
     public Spital(String nume_spital, int numar_angajati, int numar_cabinete, int numar_laboratoare) {
         this.nume_spital = nume_spital;

@@ -1,10 +1,10 @@
 package Persoana;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
-
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import servicii.Identificator;
 
 public abstract class Persoana implements Identificator {
@@ -66,5 +66,15 @@ public abstract class Persoana implements Identificator {
     public void afiseaza(){
         System.out.print( getNume() + " " + getPrenume() + " \tTelefon: " + getTelefon()
                 + " \tAdresa: " + getAdresa() + ".");
+    }
+
+    public void writeInFile(String numeFisier) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(numeFisier, true))) {
+            writer.flush();
+            writer.write( getNume() + " " + getPrenume() + "\tTelefon: " + getTelefon()
+                + "\tAdresa: " + getAdresa() + ".\n");
+        } catch (IOException e) {
+            System.err.println("Eroare la scrierea în fișier: " + e.getMessage());
+        }
     }
 }
