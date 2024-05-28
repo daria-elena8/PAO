@@ -8,7 +8,6 @@ import java.io.IOException;
 public class AsistentMedical extends Angajat {
     private String medicAsociat;
 
-    public AsistentMedical(){}
 
     public AsistentMedical(String nume, String prenume, String dataNasterii, String adresa, String telefon, String dataAngajarii, double salariu,int ore_saptamana, String medicAsociat) {
         super(nume, prenume, dataNasterii, adresa, telefon, dataAngajarii, salariu, ore_saptamana);
@@ -18,6 +17,16 @@ public class AsistentMedical extends Angajat {
     public  AsistentMedical(String[] v){
         super(v);
         this.medicAsociat = v[10];
+    }
+
+    public AsistentMedical(AsistentMedical a) {
+        super(a);
+        this.medicAsociat = a.medicAsociat;
+    }
+
+
+    public AsistentMedical deepcopyAsistentMedical( AsistentMedical a){
+        return new AsistentMedical(a);
     }
     public String getMedicAsociat(){
         return this.medicAsociat;

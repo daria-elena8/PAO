@@ -1,10 +1,13 @@
 import Arhiva.ArhivaAngajati;
+import Arhiva.ArhivaCabinete;
 import Arhiva.ArhivaPacienti;
 import servicii.PersoanaService;
 import Persoana.*;
+import Cabinete.*;
 
 import java.io.IOException;
 
+import static Cabinete.ReadCabinete.readCabineteFromFile;
 import static Persoana.ReadPersoana.readPersoanaFromFile;
 
 public class Main {
@@ -20,12 +23,19 @@ public class Main {
         String fileName = "D:\\Java\\PAO\\Proiect\\src\\date_intrare.txt";
         readPersoanaFromFile(pacienti, angajati, fileName);
 
-       pacienti.afiseazaIstoric();
-       angajati.afiseazaIstoric();
+
         String writeFile = "D:\\Java\\PAO\\Proiect\\src\\date_iesire.txt";
 
-        pacienti.writeInFile(writeFile);
-        angajati.writeInFile(writeFile);
+        //pacienti.writeInFile(writeFile);
+        //angajati.writeInFile(writeFile);
+        ArhivaPacienti pac2 = new ArhivaPacienti();
+        //pac2.adaugaInregistrari(pacienti.sorteazaDupaIdDescrescator());
+        //pac2.afiseazaIstoric();
+
+        String cabineteInFile = "D:\\Java\\PAO\\Proiect\\src\\date_intrare_cabinete.txt";
+        ArhivaCabinete cabinete = new ArhivaCabinete();
+        readCabineteFromFile(cabinete, cabineteInFile);
+        cabinete.afiseazaCabinete();
 
     }
 }

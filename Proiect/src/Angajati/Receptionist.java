@@ -17,6 +17,11 @@ public class Receptionist extends Angajat {
         super(v);
         this.limbiStraine = v[10];
     }
+    public Receptionist(Receptionist r){
+        super(r);
+        this.limbiStraine = r.limbiStraine;
+    }
+
     public String getLimbiStraine() {
         return limbiStraine;
     }

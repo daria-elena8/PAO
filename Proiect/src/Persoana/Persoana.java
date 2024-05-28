@@ -23,6 +23,13 @@ public abstract class Persoana implements Identificator {
         this.adresa = adresa;
     }
 
+    public Persoana( Persoana p){
+        this.nume = p.nume;
+        this.prenume = p.prenume;
+        this.dataNasterii = p.dataNasterii;
+        this.telefon = p.telefon;
+        this.adresa = p.adresa;
+    }
     public String getNume() {
         return nume;
     }

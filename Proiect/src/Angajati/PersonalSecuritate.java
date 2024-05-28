@@ -17,6 +17,11 @@ public class PersonalSecuritate extends Angajat {
         super(v);
         this.certificatSecuritate = v[10];
     }
+    public PersonalSecuritate(PersonalSecuritate p){
+        super(p);
+        this.certificatSecuritate = p.certificatSecuritate;
+    }
+
     public String isCertificatSecuritate() {
         return certificatSecuritate;
     }

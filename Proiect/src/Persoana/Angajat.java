@@ -14,7 +14,7 @@ public class Angajat extends Persoana {
     protected int idAngajat;
     protected String dataAngajarii;
     protected double salariu;
-    private int ore_saptamana;
+    protected int ore_saptamana;
 
     public Angajat() {}
     public Angajat(String nume, String prenume, String dataNasterii, String adresa, String telefon, String dataAngajarii, double salariu, int ore_saptamana) {
@@ -36,6 +36,13 @@ public class Angajat extends Persoana {
             System.out.println("Eroare la convertirea valorilor pentru salariu sau ore_saptamana: " + e.getMessage());
         }
 
+    }
+
+    public Angajat(Angajat a){
+        super(a);
+        this.dataAngajarii = a.dataAngajarii;
+        this.salariu = a.salariu;
+        this.ore_saptamana = a.ore_saptamana;
     }
 
 
