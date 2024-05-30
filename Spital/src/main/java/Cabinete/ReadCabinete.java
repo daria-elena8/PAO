@@ -1,9 +1,12 @@
 package Cabinete;
-import Cabinete.Cabinet;
+
 import Arhiva.ArhivaCabinete;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+
+import static Cabinete.Cabinet.matchConstructor;
 
 public abstract class ReadCabinete {
     public static void readCabineteFromFile(ArhivaCabinete cabinete, String file) {
@@ -13,7 +16,7 @@ public abstract class ReadCabinete {
                 String[] valori = linie.split("\\s+");
                 if (valori.length >= 2) {
 
-                    Cabinet cabinet = new Cabinet(valori);
+                    Cabinet cabinet = matchConstructor(valori);;
 
                     cabinete.adaugaCabinet(cabinet);
                 }

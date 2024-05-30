@@ -1,11 +1,8 @@
 package servicii;
 
-import Arhiva.ArhivaPacienti;
 import Persoana.Persoana;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 public class PersoanaService<T extends Identificator> {
 
@@ -37,8 +34,6 @@ public class PersoanaService<T extends Identificator> {
     public void afiseazaIstoric() {
     }
 
-    //    public void writeInFile(String file) {
-//    }
     public T findPersoanaDupaId(int id) {
         for (T persoana : persoane) {
             if (persoana.getId() == id) {
@@ -51,12 +46,6 @@ public class PersoanaService<T extends Identificator> {
         persoane.remove(persoana);
     }
 
-//    public void sorteazaDupaId() {
-//        Collections.sort(persoane, Comparator.comparingInt(Identificator::getId));
-//    }
-//    public void sorteazaDupaIdDescrescator() {
-//        Collections.sort(persoane, (o1, o2) -> Integer.compare(o2.getId(), o1.getId()));
-//    }
 
 
 }

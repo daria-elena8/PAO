@@ -1,0 +1,78 @@
+
+
+
+
+        Pacient pacient1 = new Pacient("Andrei", "Andreescu", "07/02/2002", "21 FirstStreet", "0712345678");
+        Pacient pacient2 = new Pacient("Pacient", "Sters", "07/02/2002", "21 FirstStreet", "0712345678");
+
+        //pacient1.afiseaza();
+
+
+        ArhivaPacienti pacienti = new ArhivaPacienti();
+        ArhivaAngajati angajati = new ArhivaAngajati();
+        String fileName = "D:\\Java\\PAO\\Spital\\src\\main\\java\\date_intrare.txt";
+        readPersoanaFromFile(pacienti, angajati, fileName);
+
+        pacienti.adaugaInregistrare(pacient1);
+        pacienti.adaugaInregistrare(pacient2);
+
+        List<Diagnostic> diagnosticList = new ArrayList<>(Arrays.asList(Migrenă));
+        FisaMedicala fPac1 = new FisaMedicala(1, diagnosticList );
+        fPac1.addDiagnostic(Alzheimer);
+        fPac1.afiseaza();
+        //System.out.println(fPac1.getDiagnostice());
+
+        pacienti.stergeInregistrare(pacient2);
+
+
+        String writeFile = "D:\\Java\\PAO\\Spital\\src\\main\\java\\date_iesire.txt";
+
+        pacienti.writeInFile(writeFile);
+        angajati.writeInFile(writeFile);
+        //ArhivaPacienti pac2 = new ArhivaPacienti();
+        //pac2.adaugaInregistrari(pacienti.sorteazaDupaIdDescrescator());
+        //pac2.afiseazaIstoric();
+
+        String cabineteInFile = "D:\\Java\\PAO\\Spital\\src\\main\\java\\date_intrare_cabinete.txt";
+        ArhivaCabinete cabinete = new ArhivaCabinete();
+        readCabineteFromFile(cabinete, cabineteInFile);
+        cabinete.afiseazaCabinete();
+
+
+        ////////////////////////////////////////////////////////////////////////
+                ///////////CabineteDAO////////////
+
+        /*
+        CabinetDAO cabinetDAO = new CabinetDAO();
+
+        // Creăm un nou cabinet
+        Cabinet cabinet = new Cabinet();
+        cabinet.setEtaj(2);
+        cabinet.setOrar("09:00 - 17:00");
+        cabinet.setIdMedic(1);
+        cabinet.setIdAsistent(2);
+        cabinetDAO.create(cabinet);
+        System.out.println("Cabinet adăugat cu ID: " + cabinet.getIdCabinet());
+
+        // Citim un cabinet
+        Cabinet readCabinet = cabinetDAO.read(cabinet.getIdCabinet());
+        if (readCabinet != null) {
+            System.out.println("Cabinet citit: " + readCabinet.getOrar());
+        }
+
+        // Actualizăm un cabinet
+        readCabinet.setOrar("08:00 - 16:00");
+        cabinetDAO.update(readCabinet);
+        System.out.println("Cabinet actualizat");
+
+        // Ștergem un cabinet
+        cabinetDAO.delete(readCabinet.getIdCabinet());
+        System.out.println("Cabinet șters");
+         */
+
+
+
+
+
+
+

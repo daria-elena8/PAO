@@ -1,9 +1,7 @@
 package Arhiva;
 
 
-import Persoana.Angajat;
 import Persoana.Pacient;
-import servicii.Identificator;
 import servicii.PersoanaService;
 
 import java.io.BufferedWriter;
@@ -11,7 +9,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 
 public class ArhivaPacienti extends PersoanaService<Pacient> {
     public ArhivaPacienti(){}
@@ -21,14 +18,7 @@ public class ArhivaPacienti extends PersoanaService<Pacient> {
             p.afiseaza();
         }
     }
-    //    @Override
-//    public void adaugaInregistrari(List<Pacient> persoane){
-//        for (Pacient persoana : persoane) {
-//            if (persoana != null) {
-//                this.persoane.add(persoana);
-//            }
-//        }
-//    }
+
     public void writeInFile(String file){
         for (Pacient p: this.persoane){
             p.writeInFile(file);
@@ -42,16 +32,22 @@ public class ArhivaPacienti extends PersoanaService<Pacient> {
         }
     }
 
-    public ArhivaPacienti sorteazaDupaId() {
-        ArhivaPacienti arhivaSortata = new ArhivaPacienti();
-        arhivaSortata.adaugaInregistrari(persoane);
-        Collections.sort(arhivaSortata.persoane, Comparator.comparingInt(Identificator::getId));
-        return arhivaSortata;
+    public void sorteazaDupaNume() {
+        Collections.sort(this.persoane, new Comparator<Pacient>() {
+            @Override
+            public int compare(Pacient p1, Pacient p2) {
+                return p1.getNume().compareTo(p2.getNume());
+            }
+        });
     }
 
-    public ArhivaPacienti sorteazaDupaIdDescrescator() {
-        Collections.sort(persoane, (o1, o2) -> Integer.compare(o2.getId(), o1.getId()));
-        return this;
+    public void sorteazaDupaDataNasterii() {
+        Collections.sort(this.persoane, new Comparator<Pacient>() {
+            @Override
+            public int compare(Pacient p1, Pacient p2) {
+                return p1.getDataNasterii().compareTo(p2.getDataNasterii());
+            }
+        });
     }
 
 

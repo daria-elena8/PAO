@@ -1,13 +1,15 @@
 package Persoana;
+
 import Angajati.AsistentMedical;
 import Angajati.Medic;
 import Angajati.PersonalSecuritate;
 import Angajati.Receptionist;
 
-import java.io.*;
-import java.util.Scanner;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
-public class Angajat extends Persoana {
+public abstract class Angajat extends Persoana {
 
     private static int idCounter = 0;
     protected int idAngajat;
@@ -73,45 +75,6 @@ public class Angajat extends Persoana {
         return null;
     }
 
-
-
-
-    /*
-    public static Angajat readAngajat(String numeF) throws IOException {
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader((numeF)));
-            String linie;
-            StringBuilder stringBuilder = new StringBuilder();
-
-            while((linie = reader.readLine()) != null){
-                stringBuilder.append(linie);
-                stringBuilder.append(" ");
-            }
-            String[] valori = stringBuilder.toString().split("\\s+");
-            reader.close();
-
-            if (valori.length < 7){
-                throw new IOException("Nu sunt suficiente valori pentru a crea o persoana!");
-            }
-            String nume = valori[0];
-            String prenume = valori[1];
-            String dataNasterii = valori[2];
-            String telefon = valori[3];
-            String adresa = valori[4];
-            String data_angajarii = valori[5];
-            double salariu = double(valori[6]);
-            int ore_sapt = int(valori[7]);
-            Angajat angajat = new Angajat(valori);
-            return angajat;
-
-        }
-        catch (IOException e){
-            System.out.println("Modificati sau alegeti un fisier avand informatii in formatul corespunzator\nEroare: " + e.getMessage());
-            return null;
-        }
-    };
-
-    */
 
     public int getId(){ return idAngajat;}
     public int getIdAngajat() {

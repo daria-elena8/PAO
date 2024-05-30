@@ -10,21 +10,36 @@ public class Cabinet {
     public int etaj;
     public String orar;
 
-    // public Medic medic = new Medic();
-    // public AsistentMedical asistent  = new AsistentMedical();
+    public int idMedic;
+    public int idAsistent;
 
 
-
+    public Cabinet(){}
     public Cabinet(int etaj, String orar){
         this.idCabinet = ++counterCabinete;
         this.etaj = etaj;
         this.orar = orar;
 
     }
-    public Cabinet(String[] v){
+    public Cabinet(int etaj, String orar, int idMedic, int idAsistent){
         this.idCabinet = ++counterCabinete;
-        this.etaj = Integer.parseInt(v[0]);
-        this.orar = v[1];
+        this.etaj = etaj;
+        this.orar = orar;
+        this.idMedic = idMedic;
+        this.idAsistent = idAsistent;
+
+    }
+    public static Cabinet matchConstructor(String[] v){
+        if(v.length>2){
+            return new Cabinet(Integer.parseInt(v[0]),v[1],Integer.parseInt(v[2]), Integer.parseInt(v[3]));
+        }
+        else {
+            return new Cabinet(Integer.parseInt(v[0]),v[1]);
+        }
+    }
+
+    public void setAutoId(){
+        this.idCabinet = ++counterCabinete;
     }
     public static int getCounterCabinete() {
         return counterCabinete;
@@ -32,6 +47,22 @@ public class Cabinet {
 
     public static void setCounterCabinete(int counterCabinete) {
         Cabinet.counterCabinete = counterCabinete;
+    }
+
+    public int getIdMedic() {
+        return idMedic;
+    }
+
+    public void setIdMedic(int idMedic) {
+        this.idMedic = idMedic;
+    }
+
+    public int getIdAsistent() {
+        return idAsistent;
+    }
+
+    public void setIdAsistent(int idAsistent) {
+        this.idAsistent = idAsistent;
     }
 
     public int getIdCabinet() {
@@ -64,15 +95,12 @@ public class Cabinet {
             if (valori.length < 2) {
                 throw new IOException("Nu sunt suficiente valori pentru a crea un angajat!");
             }
-            return new Cabinet(valori);
+            return matchConstructor(valori);
         } catch (IOException e) {
             System.out.println("Modificati sau alegeti un fisier avand informatii in formatul corespunzator\nEroare: " + e.getMessage());
             return null;
         }
     }
-
-
-
 
     public void afiseaza() {
         System.out.println("\n----------------------------------------------------------------------------------------------");

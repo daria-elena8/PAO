@@ -1,37 +1,60 @@
-Spital:
-    - nume_spital
-    - nr_angajati
-    - cabinete
-    - laboratoare (realizare analize)
-
-    - Sectii (specializari)
-
-    - Angajati: Medici, Asistente, Personal Garda, Receptionist, Personal Securitate.
-        -> se impart pe specializari: Cardiologie, Neurologie, Gastroenterologie, Oncologie, Pediatrie, Pneumologie, Psihiatrie, Medicina de Familie
-
-    - Pacienti:
-                - fisa medicala: sumar(id_pacient, nume, prenume, serie_card_sanatate), istoric
-                - reteta: sumar, diagnostic, prescriptie, durata_tratamentului
-                - adeverinta: sumar - id_pacient, scop, semnatura (bool)
-
-    - Programari:
-                - sumar, data, specializare,
-
-    - Analize:
-                - sumar, tip (analize_sange, testare, consultatie)
+        Proiect - Spital:
 
 
-To Do:
-    - Persoana - devine interfata
+    Descriere:
+
+    Proiectul are in vedere crearea unui sistem pentru stocarea si gestionarea
+    cu usurinta a informatiilor ce tin de un spital.
+
+-------------------------------------------------------------------------------------------------------
 
 
+    Structura:
 
-super, acum as vrea sa rezolv o problema cu angajatii. Asa arata logica din spate pentru angajati:
+     -> Clasa abstracta PERSOANA contine atribute specifice
+            ( nume, prenume, dataNasterii, telefon, adresa ).
 
-    - Angajati: Medici, Asistente, Personal Garda, Receptionist, Paza.
-        -> se impart pe specializari: Cardiologie, Neurologie, Gastrologie, Oncologie, Pediatrie, Pneumologie, Psihiatrie, Medicina de Familie
-Ideea este ca avem nevoie de sectii in spital. Pentru fiecare sectie
+     -> Clasa PACIENT extinde PERSOANA, si adauga drept atribut propriu un id,
+            care ajuta la contorizarea acestora.
+     -> FISAMEDICALA este unica pentru PACIENT si vice-versa, conexiunea intre cele
+            doua se face prin ID. Obiectul de tip FISAMEDICALA retine informatii despre starea
+            de sanatate a pacientului.
 
+     -> Clasa ANGAJAT adauga la obiectul PERSOANA atribute specifice unui angajat
+            (idAngajat, dataAngajarii, salariu, ore_saptamana). ANGAJAT in sine nu reprezinta
+            nimic, insa extista 4 tipuri de angajati in proiectul Spital:
+                    -> AsistentMedical (care are un medicAsociat);
+                    -> Medic (ce are o specializare);
+                    -> PersonalSecuritate (ce poate avea certificatSecuritate daca a
+                        mai lucrat in domeniu);
+                    -> Receptionist (care cunoaste una sau mai multe limbiStraine);
 
-Angaj: sectie
-saloane pt pacienti,cabinete medici/asi
+     -> Clasa CABINET, cu ajutorul careia ne stocam date despre saloanele/cabinetele
+            din spital.
+
+-------------------------------------------------------------------------------------------------------
+
+     In prima parte a proiectului, pentru a putea stoca date, am creat
+            ARHIVAANGAJATI, ARHIVAPACIENTI si ARHIVACABINETE.
+     Acestea mostenesc clasa de serviciu PERSOANASERVICE, care are metodele si
+     functiile generale implementate.
+
+     Am codificat fisierul cu datele de intrare pentru PERSOANE in felul urmator:
+            -> P = obiectul pentru care se citesc datele este de tip PACIENT;
+            -> A A = obiectul pentru care se citesc datele este de tip ANGAJAT -> ASISTENTMEDICAL;
+            -> A M = obiectul pentru care se citesc datele este de tip ANGAJAT -> MEDIC;
+            -> A S = obiectul pentru care se citesc datele este de tip ANGAJAT -> PERSONALSECURITATE;
+            -> A R = obiectul pentru care se citesc datele este de tip ANGAJAT -> RECEPTIONIST;
+
+-------------------------------------------------------------------------------------------------------
+
+    In a doua parte a proiectului:
+
+        -> Am creat clasa abstracta de baza ABSTRACTDAO,
+            care a fost baza pentru CABINETDAO, PACIENTDAO si FISAMEDICALADAO in care
+            am implementat operatiile CRUD pentru baza de date
+        -> Am facut configurarea bazei de date, si am creat tabele corespunzatoare
+            cu logica din cod.
+        -> Am implementat un meniu interactiv pentru a putea face operatii
+            cu usurinta pe obiecte.
+

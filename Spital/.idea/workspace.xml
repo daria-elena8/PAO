@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be189455-ecb4-46fa-b426-197aa52c3af7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Proiect/src/domain/Spital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/Proiect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/Proiect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Angajati/AsistentMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Angajati/AsistentMedical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Angajati/Medic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Angajati/Medic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Angajati/PersonalSecuritate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Angajati/PersonalSecuritate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Angajati/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Angajati/Receptionist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Arhiva/ArhivaAngajati.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Arhiva/ArhivaAngajati.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Arhiva/ArhivaCabinete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Arhiva/ArhivaPacienti.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Arhiva/ArhivaPacienti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Cabinete/Cabinet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Cabinete/ReadCabinete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Database/DAO/AbstractDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Database/DAO/FisaMedicalaDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Database/DAO/GenericDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Database/DAO/PacientDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Database/config/DatabaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Database/config/SetupDataUsingStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Persoana/Angajat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Persoana/Angajat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Persoana/Fisa_Medicala/FisaMedicala.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Persoana/Fisa_Medicala/FisaMedicala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Persoana/Pacient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Persoana/Pacient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Persoana/Persoana.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Persoana/Persoana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/Persoana/ReadPersoana.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/Persoana/ReadPersoana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/date_iesire.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/date_iesire.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/date_intrare.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/date_intrare_cabinete.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proiect/src/servicii/PersoanaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proiect/src/servicii/PersoanaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Angajati/AsistentMedical.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Angajati/Medic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Angajati/PersonalSecuritate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Angajati/Receptionist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Arhiva/ArhivaAngajati.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Arhiva/ArhivaCabinete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Arhiva/ArhivaPacienti.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cabinete/Cabinet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cabinete/ReadCabinete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/DAO/AbstractDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/DAO/FisaMedicalaDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/DAO/GenericDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/DAO/PacientDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/config/DatabaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/config/SetupDataUsingStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Descriere_Proiect.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persoana/Angajat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persoana/Fisa_Medicala/FisaMedicala.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persoana/Pacient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persoana/Persoana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persoana/ReadPersoana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/audit.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/date_iesire.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/date_intrare.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/date_intrare_cabinete.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainOld.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicii/Audit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicii/Identificator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicii/PersoanaService.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2h9RZKaCpHw6o6nGvdDJmkI1QGV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;protected&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be189455-ecb4-46fa-b426-197aa52c3af7" name="Changes" comment="" />
+      <created>1717004364327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717004364327</updated>
+      <workItem from="1717004365641" duration="1643000" />
+      <workItem from="1717006279581" duration="7396000" />
+      <workItem from="1717056702917" duration="1193000" />
+      <workItem from="1717058156012" duration="38000" />
+      <workItem from="1717058963234" duration="1847000" />
+      <workItem from="1717061769540" duration="751000" />
+      <workItem from="1717074859677" duration="1576000" />
+      <workItem from="1717087781291" duration="4429000" />
+      <workItem from="1717092892902" duration="4706000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

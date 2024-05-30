@@ -9,11 +9,6 @@ import java.io.IOException;
 public class Medic extends Angajat {
     private String specializare;
 
-
-
-//    public AsistentMedical(String nume, String prenume, String dataNasterii, String adresa, String telefon, String dataAngajarii, double salariu,int ore_saptamana, String medicAsociat) {
-//        super(nume, prenume, dataNasterii, adresa, telefon, dataAngajarii, salariu, ore_saptamana);
-
     public Medic(String nume, String prenume, String dataNasterii, String adresa, String telefon,  String dataAngajarii, double salariu,int ore_saptamana, String specializare) {
         super(nume, prenume, dataNasterii, adresa, telefon, dataAngajarii, salariu, ore_saptamana);
         this.specializare = specializare;

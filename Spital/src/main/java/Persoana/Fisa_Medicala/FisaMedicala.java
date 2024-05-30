@@ -1,27 +1,32 @@
 package Persoana.Fisa_Medicala;
 
-import Persoana.Pacient;
 import java.util.List;
 
-public class FisaMedicala extends Pacient {
+public class FisaMedicala {
 
     private static int id = 0;
 
     private int nrFisa;
-    private Pacient pacient;
+    private int idPacient;
 
-    private String diagnostice;
+    private List<Diagnostic> diagnostice;
 
     public FisaMedicala() {}
-    public FisaMedicala(Pacient pacient, String diagnostice){
+
+    public FisaMedicala(int pacient){
         this.nrFisa = ++id;
-        this.pacient = pacient;
+        this.idPacient = pacient;
+
+    }
+    public FisaMedicala(int pacient, List<Diagnostic> diagnostice){
+        this.nrFisa = ++id;
+        this.idPacient = pacient;
         this.diagnostice = diagnostice;
     }
 
     public FisaMedicala(FisaMedicala fisaMedicala){
         this.nrFisa = fisaMedicala.nrFisa;
-        this.pacient = fisaMedicala.getPacient();
+        this.idPacient = fisaMedicala.getIdPacient();
         this.diagnostice = fisaMedicala.diagnostice;
     }
 
@@ -29,36 +34,43 @@ public class FisaMedicala extends Pacient {
         return nrFisa;
     }
 
-    @Override
+    public void setAutoId(){
+        this.nrFisa = ++id;
+    }
+    public void setNrFisa(int nr){
+        this.nrFisa = nr;
+    }
     public int getId(){
         return this.nrFisa;
     }
-    public Pacient getPacient() {
-        return pacient;
+    public int getIdPacient() {
+        return idPacient;
     }
 
-    public void setPacient(Pacient pacient) {
-        this.pacient = pacient;
+    public void setIdPacient(int pacient) {
+        this.idPacient = pacient;
     }
 
-    public String getDiagnostice() {
-        return diagnostice;
+    public List<Diagnostic> getDiagnostice() {
+        return this.diagnostice;
     }
 
-    public void setDiagnostice(String diagnostice) {
+    public void setDiagnostice(List<Diagnostic> diagnostice) {
         this.diagnostice = diagnostice;
     }
 
-    public void addDiagnostic(String diagnostic){
-        diagnostice = diagnostice + diagnostic;
+    public void addDiagnostic(Diagnostic diagnostic){
+        diagnostice.add(diagnostic);
     }
     protected void afiseazadiagnostice(){
-        System.out.println(this.diagnostice);
+        System.out.print("Diagnostice:\n");
+        for(Diagnostic d : diagnostice){
+            System.out.println(d + ", ");
+        }
     }
 
     public void afiseaza(){
-        System.out.print("\tFisa medicala " + this.nrFisa + ":\n");
-        this.pacient.afiseaza();
+        System.out.print("\tFisa medicala " + this.nrFisa + " \tidPacient: " + this.getIdPacient() );
         afiseazadiagnostice();
     }
 

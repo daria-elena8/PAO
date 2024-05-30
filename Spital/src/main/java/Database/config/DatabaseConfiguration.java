@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConfiguration {
-    private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/SpitalDataBase";
+    private static final String DATABASE_URL = "jdbc:mysql://localhost:3307/SpitalProject";
 
     private static final String USER = "root";
 

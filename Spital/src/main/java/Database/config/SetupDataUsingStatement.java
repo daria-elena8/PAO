@@ -1,7 +1,5 @@
 package Database.config;
 
-import Database.config.DatabaseConfiguration;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
